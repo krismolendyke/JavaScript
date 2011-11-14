@@ -388,12 +388,6 @@
 			<key>name</key>
 			<string>meta.class.instance.constructor</string>
 		</dict>
-        <dict>
-            <key>match</key>
-            <string>\b(console)\b</string>
-            <key>name</key>
-            <string>entity.name.type.object.js.firebug</string>
-        </dict>
 		<dict>
 			<key>match</key>
 			<string>\.(warn|info|log|error|time|timeEnd|assert)\b</string>
