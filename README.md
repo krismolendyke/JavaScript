@@ -9,6 +9,9 @@ This bundle is a "fork" of the bundle included with [Sublime Text 2](http://subl
 
 ### Modified Snippets
 
+#### if.sublime-snippet `if`
+Removed unconditional `true` and trailing `;`.
+
 #### for.sublime-snippet `for`
 Everybody has their preferred `for` loop style.  This is mine.  For better or worse, I tend to share Douglas Crockford's [aversion to the `++` operator in JavaScript](http://javascript.crockford.com/code.html) due to its syntactical proximity to adding a coerced string to a number.
 
