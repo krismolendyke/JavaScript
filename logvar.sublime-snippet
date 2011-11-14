@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+console.log('${1:$TM_SELECTED_TEXT}: ', $1);
+]]></content>
+    <tabTrigger>logvar</tabTrigger>
+    <scope>source.js</scope>
+    <description>Console Log a Variable</description>
+</snippet>

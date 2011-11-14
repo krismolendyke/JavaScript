@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+console.group('${1:group}');
+${0}
+console.groupEnd();
+]]></content>
+    <tabTrigger>group</tabTrigger>
+    <scope>source.js</scope>
+    <description>Create a console log group.</description>
+</snippet>
