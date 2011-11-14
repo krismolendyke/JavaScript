@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${5:description}
+ *
+ * @param {${6:type}} ${4} ${7:description}
+ */
+mps.${1:account}.${2:module.}${3:function} = function(${4:arg}) {
+    console.group('${2}${3}');
+
+    $0
+
+    console.groupEnd();
+};
+]]></content>
+    <tabTrigger>mps</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
