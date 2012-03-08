@@ -21,10 +21,6 @@ These are some snippets that I've added that I find useful.  The snippet tab tri
 #### function_comment.sublime-snippet `/**`
 Insert a block comment, usually used for a function or other [JavaScript annotation](http://code.google.com/closure/compiler/docs/js-for-compiler.html).
 
-#### googdomquery.sublime-snippet `goog`
-
-Insert and walk through a [`goog.dom.query()`](http://closure-library.googlecode.com/svn/docs/closure_third_party_closure_goog_dojo_dom_query.js.html) statement.
-
 #### log.sublime-snippet `log`
 
 Insert a `console.log();` statement.
