@@ -5,14 +5,15 @@
 	<key>name</key>
 	<string>Symbol List Function</string>
 	<key>scope</key>
-	<string>source.js meta.function.js, source.js meta.function.json.js</string>
+	<string>source.js meta.function.js, source.js meta.function.prototype.js, source.js meta.function.json.js</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<string>1</string>
         <key>symbolTransformation</key>
         <string>
-            s/\s{2,}/ /g; # Collapse multiple white space to a single space.
+            s/\s{2,}/ /g;  # Collapse multiple white space to a single space.
+            s/^(function\s*\()/anonymous: $1/;  # Label anonymous functions.
         </string>
 	</dict>
 	<key>uuid</key>
