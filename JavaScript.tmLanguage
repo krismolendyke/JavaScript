@@ -561,24 +561,71 @@
 			</array>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>/\*\*(?!/)</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.js</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\*/</string>
+            <key>begin</key>
+            <string>(/\*\*)(?!/)</string>
+            <key>beginCaptures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>punctuation.definition.comment.begin.jsdoc</string>
+                </dict>
+            </dict>
+            <key>end</key>
+            <string>(\*/)</string>
+            <key>endCaptures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>punctuation.definition.comment.end.jsdoc</string>
+                </dict>
+            </dict>
+            <key>patterns</key>
+            <array>
+                <dict>
+                    <key>match</key>
+                    <string>(@fileoverview|@private|@const|@deprecated)\b</string>
+                    <key>name</key>
+                    <string>support.constant.soy</string>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>(?x)
+                        (@type|@param|@suppress|@return|@define)
+                        \b\s+    # Word break then at least one space.
+                        (\{      # Begin optional type.
+                            (.*) # Type.
+                        \})?     # End optional type.
+                        \s*      # Optional whitespace.
+                        (\w+)?   # Optional parameter variable.
+                    </string>
+                    <key>captures</key>
+                    <dict>
+                        <key>1</key>
+                        <dict>
+                            <key>name</key>
+                            <string>support.constant.jsdoc</string>
+                        </dict>
+                        <key>3</key>
+                        <dict>
+                            <key>name</key>
+                            <string>support.type.jsdoc</string>
+                        </dict>
+                        <key>4</key>
+                        <dict>
+                            <key>name</key>
+                            <string>variable.parameter.jsdoc</string>
+                        </dict>
+                    </dict>
+                </dict>
+            </array>
 			<key>name</key>
-			<string>comment.block.documentation.js</string>
+			<string>comment.block.documentation.jsdoc</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>/\*</string>
+			<string>/\*(?!\*)</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
