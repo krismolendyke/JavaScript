@@ -585,7 +585,7 @@
             <array>
                 <dict>
                     <key>match</key>
-                    <string>(@fileoverview|@private|@const|@deprecated|@constructor)\b</string>
+                    <string>(@fileoverview|@private|@const|@deprecated|@constructor|@see)\b</string>
                     <key>name</key>
                     <string>support.constant.soy</string>
                 </dict>
