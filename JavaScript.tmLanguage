@@ -585,14 +585,14 @@
             <array>
                 <dict>
                     <key>match</key>
-                    <string>(@fileoverview|@private|@const|@deprecated)\b</string>
+                    <string>(@fileoverview|@private|@const|@deprecated|@constructor)\b</string>
                     <key>name</key>
                     <string>support.constant.soy</string>
                 </dict>
                 <dict>
                     <key>match</key>
                     <string>(?x)
-                        (@type|@param|@suppress|@return|@define)
+                        (@type|@param|@suppress|@return|@define|@typedef|@extends)
                         \b\s+    # Word break then at least one space.
                         (\{      # Begin optional type.
                             (.*) # Type.
