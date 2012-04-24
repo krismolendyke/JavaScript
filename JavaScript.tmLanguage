@@ -585,7 +585,13 @@
             <array>
                 <dict>
                     <key>match</key>
-                    <string>(@fileoverview|@private|@const|@deprecated|@constructor|@see|@protected)\b</string>
+                    <string>(@author\b.*|@deprecated)</string>
+                    <key>name</key>
+                    <string>invalid.deprecated.soy</string>
+                </dict>
+                <dict>
+                    <key>match</key>
+                    <string>(@fileoverview|@private|@const|@constructor|@see|@protected)\b</string>
                     <key>name</key>
                     <string>support.constant.soy</string>
                 </dict>
