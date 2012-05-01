@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+mc.assert.assert(${1:condition}, '${2:message}');$0
+]]></content>
+    <tabTrigger>assert</tabTrigger>
+    <scope>source.js</scope>
+    <description>mc.assert.assert</description>
+</snippet>
