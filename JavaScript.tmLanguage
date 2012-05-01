@@ -560,9 +560,31 @@
 				</dict>
 			</array>
 		</dict>
+        <dict>
+            <key>match</key>
+            <string>(/\*\*)(.*)(\*/)</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>comment.block.documentation.begin.jsdoc</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>comment.block.documentation.jsdoc</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>comment.block.documentation.end.jsdoc</string>
+                </dict>
+            </dict>
+        </dict>
 		<dict>
             <key>begin</key>
-            <string>(/\*\*)(?!/)</string>
+            <string>(/\*\*)(?!\*/)</string>
             <key>beginCaptures</key>
             <dict>
                 <key>1</key>
